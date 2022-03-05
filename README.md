@@ -1,6 +1,6 @@
 <p align="left">
   <br />
-  <a title="Learn more about Easylanguage" href="http://github.com/raven2cz/atom-language-easylanguage"><img src="https://github.com/raven2cz/atom-language-easylanguage/blob/main/images/atom-language-easylanguage-logo-readme.jpg" alt="Easylanguage Logo" width="60%"/></a>
+  <a title="Learn more about Easylanguage" href="http://github.com/raven2cz/atom-language-easylanguage"><img src="https://github.com/raven2cz/atom-language-easylanguage/blob/master/images/atom-language-easylanguage-logo-readme.jpg" alt="Easylanguage Logo" width="60%"/></a>
 </p>
 
 # Easylanguage TradeStation Support for Atom
@@ -27,13 +27,13 @@ Full syntax highlight for **Easylanguage**. Default for files with file-extensio
 
 Syntax Highlighting is separate project because source highlighting can be different by selected colorscheme. Recommended is atom package [`easylanguage-syntax`](https://github.com/raven2cz/easylanguage-syntax) is contains default one dark highlighting.
 
-<img src="https://github.com/raven2cz/atom-language-easylanguage/blob/main/images/atom-language-easylanguage-syntax-grammar-example.png" alt="syntax" width="50%"/>
+<img src="https://github.com/raven2cz/atom-language-easylanguage/blob/master/images/atom-language-easylanguage-syntax-grammar-example.png" alt="syntax" width="50%"/>
 
 ## Snippets
 
 Set of snippets available. Just type the word, the popup will show.
 
-<img src="https://github.com/raven2cz/atom-language-easylanguage/blob/main/images/atom-language-easylanguage-snippets-example.png" alt="syntax" width="50%"/>
+<img src="https://github.com/raven2cz/atom-language-easylanguage/blob/master/images/atom-language-easylanguage-snippets-example.png" alt="syntax" width="50%"/>
 
 ## File Symbols
 
