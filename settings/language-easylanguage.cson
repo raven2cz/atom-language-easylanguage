@@ -1,0 +1,5 @@
+'.source.easylanguage':
+  'editor':
+    'tabLength': 2
+    'commentStart': '// '
+    'increaseIndentPattern': '\\b(?i:(begin|const|else|exception|input|inputs|finally|for|if|var|vars|(?<!of\\s)object|package\\s*$|protected\\s*$|public\\s*$|published\\s*$|task|try|type|uses|var|when))\\b'

@@ -1,0 +1,17 @@
+{
+  "name": "language-easylanguage",
+  "version": "1.0.0",
+  "description": "Easylanguage language grammar support in Atom",
+  "repository": "https://github.com/raven2cz/atom-language-easylanguage",
+  "keywords": [
+    "grammar",
+    "easylanguage",
+    "tradestation",
+    "multicharts"
+  ],
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {}
+}

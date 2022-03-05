@@ -1,0 +1,125 @@
+'.source.easylanguage':
+  'begin … end':
+    'prefix': 'begin'
+    'body': """
+      begin
+      \t$0
+      end;
+    """
+  'case … end':
+    'prefix': 'case'
+    'body': """
+      case ${1:true}: begin
+      \t$0
+      end;
+    """
+  'case … (no begin end)':
+    'prefix': 'casen'
+    'body': """
+      case ${1:True}: $0
+    """
+  'else … end':
+    'prefix': 'else'
+    'body': """
+      else begin
+      \t$0
+      end;
+    """
+  'for … begin end':
+    'prefix': 'forb'
+    'body': """
+      for ${1:i} = ${2:0} to ${3:max} begin
+      \t$0
+      end;
+    """
+  'for downto … end':
+    'prefix': 'forr'
+    'body': """
+      for ${1:i} = ${2:max} downto ${3:0} begin
+      \t$0
+      end;
+    """
+  'method … end':
+    'prefix': 'method'
+    'body': """
+      method ${2:void} ${1:MyMethod}(${4:type}) ${3:arg};
+      begin
+      \t$0
+      end;
+    """
+  'if … (no begin end)':
+    'prefix': 'if'
+    'body': """
+      if ${1:True} then
+      \t$0
+    """
+  'if … end':
+    'prefix': 'ifb'
+    'body': """
+      if ${1:True} then begin
+      \t$0
+      end;
+    """
+  'if … else (no begin end)':
+    'prefix': 'ife'
+    'body': """
+      if ${1:True} then
+      \t${2:then code here}
+      else
+      \t${3:else code here}
+    """
+  'if … else end':
+    'prefix': 'ifeb'
+    'body': """
+      if ${1:True} then begin
+      \t${2:then code here}
+      end
+      else begin
+      \t${3:else code here}
+      end;
+    """
+  'repeat until':
+    'prefix': 'repeat'
+    'body': """
+      repeat
+      \t$0
+      until (${1:True});
+    """
+  'try object … finally':
+    'prefix': 'try'
+    'body': """
+      ${1:variable} := ${2:TComponent}.Create(${3:params});
+      try
+      \t$0
+      finally
+      \t${1:variable}
+      end;
+    """
+  'try … finally':
+    'prefix': 'tryf'
+    'body': """
+      try
+      \t$0
+      finally
+      \t$1
+      end;
+    """
+  'try … except':
+    'prefix': 'trye'
+    'body': """
+      try
+      \t$0
+      except
+      \ton ${1:e}: ${2:Exception} do
+      end;
+    """
+  'variable':
+    'prefix': 'var'
+    'body': '${2:type} ${1:variable} ;$0'
+  'while statement':
+    'prefix': 'whileb'
+    'body': """
+      while ${1:statement} do begin
+      \t$0
+      end;
+    """

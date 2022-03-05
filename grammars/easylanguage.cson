@@ -1,0 +1,115 @@
+'fileTypes': [
+  'eld'
+]
+'name': 'Easylanguage'
+'patterns': [
+  {
+    'match': '\\b(?i:(a|an|above|alert|and|array|astype|at|bar|barinterval|barnumber|barssinceentry|begin|below|bigpointvalue|breakpoint|buy|buytocover|by|c|case|class|catch|close|clearprintlog|commentary|commentaryenabled|contracts|condition[0-9]+|const|consts|cross|crosses|currentbar|currentdate|currenttime|d|data|data2|data3|data4|data5|data6|data7|date|definedllfunc|default|div|do|downto|downticks|else|end|entryprice|except|export|exports|false|finally|for|from|getsymbolname|getpositionquantity|getaccountid|getpositionopenpl|getpositionaverageprice|goto|gradientcolor|grossprofit|grossloss|h|high|i|if|import|in|index|input|inputs|interface|interrupt|intrabarpersist|is|l|label|limit|low|market|marketposition|maxbarsback|minmove|mod|module|newline|next|netprofit|new|nil|not|noplot|null|nulwintrades|numlostrades|o|of|on|open|of|once|only|openint|openpositionprofit|or|otherwise|out|or|over|package|playsound|plot|plotpb|plot1|plot2|plot3|plot4|plot5|plot6|plot7|pow|private|program|property|plotpb|points|pointvalue|pricescale|print|raise|read|repeat|return|rgb|sell|sellshort|set|setplotcolor|setplotwith|setplotbgcolor|shares|stop|switch|t|than|the|then|this|throw|ticks|time|then|to|try|type|true|under|unit|until|uses|using|upticks|v|value[0-9]+|var|vars|variables|over|volume|while|with|write|xor))\\b'
+    'name': 'keyword.control.easylanguage'
+  }
+  {
+    'match': '\\b(?i:(void|boolean|bool|byte|char|short|int|int64|float|long|double|string|numeric|truefalse|numericseries|numericsimple|truefalsesimple|truefalseseries|stringseries|stringsimple|numericref|truefalseref|stringref|numericarray|numericarrayref|truefalsearrayref|stringarrayref))\\b'
+    'name': 'storage.type.primitive.easylanguage'
+  }
+  {
+    'match': '\\b(?i:(vector|datetime|globaldictionary|dictionary|streamreader|streamwriter|timer|eventargs|object|button|form|optimizer))\\b'
+    'name': 'storage.type.builtin.classes.easylanguage'
+  }
+  {
+    'match': '\\b(?i:(adx|average|averagearray|avgprice|avgtruerange|barssinceexit|minbarssinceexit|bollingerband|calcdate|calctime|checkalert|closed|ceiling|correlation|divergence|daystoexpiration|dayofweek|dmi|fastd|fastk|file|fileappend|filedelete|floor|getappinfo|highd|highest|highestarray|keltnerchannel|lastbaronchart|legacycolorvalue|linearreg|linearregslope|lowd|lowest|lowestarray|macd|midpoint|midstr|minlist|maxlist|momentum|moneyflow|mro|numtostr|opend|percentchange|percentprofit|parabolic|pivot|range|round|rsi|rsquare|slowd|slowk|sortarray|strtonum|strlen|standarddev|summation|setbreakeven|setdollartrailling|setpercenttrailing|setprofittarget|setexitonclose|setstoploss|setstopshare|totaltrades|triaverage|truerange|tl_new|tl_setbegin|instr|tl_setend|tl_delete|tl_setsize|tl_setcolor|tl_setextright|tl_setextleft|tl_getvalue|tl_getnext|tl_getfirst|waverage|xaverage))\\b'
+    'name': 'storage.type.builtin.words.easylanguage'
+  }
+  {
+    'match': '\\b(?i:(@delta|@gamma|@theta|@vega|ab_addcellrange|ab_averagecells|ab_averageprice|ab_cellcount|ab_median|ab_mode|ab_nextcolor|ab_nextlabel|ab_rowheightcalc|ab_stddev|absolutebreadth|accumdist|accumswingindex|adaptivemovavg|advancedeclinediff|advancedeclineratio|adx|adxcustom|adxr|adxrcustom|armsindex|average|averagearray|averagefc|avgdeviation|avgdeviationarray|avgprice|avgtruerange|barannualization|barnumber|bearishdivergence|bjerkstenscall|bjerkstensphi|blackmodel|blackscholes|bollingerband|bullishdivergence|c_3whsolds_3blkcrows|c_bulleng_beareng|c_bullhar_bearhar|c_doji|c_hammer_hangingman|c_morndoji_evedoji|c_mornstar_evestar|c_pierceline_dkcloud|c_shootingstar|calcdate|calctime|cci|chaikinosc|closed|closem|closew|closey|coefficientr|coefficientrarray|coefficientreasy|combination|copycolumn|correlation|correlationarray|countif|covar|covararray|covareasy|csi|cum|currentask|currentbid|currentsession|currentsessionms|dailylosers|dailywinners|daystoexpiration|detrend|devsqrd|devsqrdarray|dirmovement|divergence|dmi|dmicustom|dmiminus|dmiminuscustom|dmiplus|dmipluscustom|easeofmovement|eldate|eldate_consol|eldatetostring|entriestoday|exitstoday|extremepriceratio|extremes|extremesarray|extremesfc|factorial|fastd|fastdcustom|fastdcustomorig|fasthighestbar|fastk|fastkcustom|fastkcustomeasy|fastkcustomorig|fastlowestbar|findbar|firstsession|firstsessionms|fisher|fisherinv|fundboolean|funddate|fundperiodenddate|fundsetup|fundstring|fundvalue|fundvaluettm|gcd|generatestrike|getrgbvalues|harmonicmean|harmonicmeanarray|heappush|heappush2d|heapsift|heapsift2d|highd|highest|highestarray|highestbar|highestfc|highm|highw|highy|hpi|iff|ifflogic|iffstring|impliedvolatility|intrinsic|keltnerchannel|kurtosis|kurtosisarray|kurtosisopt|lastbaronchart|lastcalcdate|lastcalctime|lastdayofmonth|lasthour|lastsession|lastsessionms|leader|limitiftouchedorder|limitorder|linearreg|linearregangle|linearreganglefc|linearregfc|linearregslope|linearregslopefc|linearregvalue|linearregvaluefc|linregarray|linregarray2|linregforecastarray|linreginterceptarray|linregslopearray|lowd|lowest|lowestarray|lowestbar|lowestfc|lowm|loww|lowy|lro|lwaccdis|macd|marketiftouchedorder|marketorder|massindex|mcclellanosc|median|medianarray|medianprice|mfi|midpoint|minutesintoweek|minutestotime|mode|modearray|momentum|moneyflow|mro|myprice|next3rdfriday|normcumdensity|normcumdensityarray|normdensity|normdensityarray|normgradientcolor|normscdensity|nthextremes|nthextremesarray|nthhighest|nthhighestarray|nthhighestbar|nthlowest|nthlowestarray|nthlowestbar|numericrank|numericrankarray|numunits|obv|ohlcperiodsago|onealert|opend|openm|openw|openy|optioncomplex|optionprice|os_annualdividend|os_binomial|os_checkprox|os_daystoexp|os_daystofarexp|os_daystonearexp|os_divsbetweendates|os_findcall|os_findput|os_findseries|os_fracdaystoexp|os_grossin|os_grossout|os_intrinsic|os_maxnumstrikes|parabolic|paraboliccustom|parabolicsar|partsessioncountday|pennant|percentchange|percentile|percentilearray|percentr|percentrank|percentrankarray|permutation|pivot|pivothighvs|pivothighvsbar|pivotlowvs|pivotlowvsbar|pivotreversalgen|placeorder|positionprofit|positionprofitcustom|priceoscillator|pricevoltrend|probabove|probbelow|probbetween|quartile|quartilearray|range|rangeleader|rateofchange|recentocc|round2fraction|rs_average|rs_barsperday|rs_dailydataarray|rs_extremes|rs_priceextension|rs_reversalpatterns|rs_trueextremes|rsi|rsquare|rsquarearray|runcommandonlastbar|sessioncountday|sessionfirstbartime|showlongstop|showshortstop|skew|skewarray|skewopt|slowd|slowdcustom|slowdcustomorig|slowk|slowkcustom|slowkcustomorig|smoothedaverage|sort2darray|sortarray|sortheap2darray|sortheaparray|standarddev|standarddevannual|standarddevarray|standardize|standardizearray|stddev|stddevs|stderror|stderrorarray|stderrorarray2|stochastic|stochasticexp|stoplimitorder|stopmarketorder|strcolortonum|summation|summationarray|summationfc|summationif|summationrecarray|summationsqrarray|swinghigh|swinghighbar|swingindex|swinglow|swinglowbar|text_exist|text_float|timeseriesforecast|timetominutes|tl_exist|tlangle|tlangleeasy|tlslope|tlslopeeasy|tlvalue|tlvalueeasy|trailingstoporder|triaverage|triaverage_gen|trimmean|trimmeanarray|trix|truehigh|truelow|truerange|truerangecustom|typicalprice|ulcerindex|ultimateoscillator|variancearray|varianceps|volatility|volatilitystddev|volumeosc|volumeroc|waverage|weightedclose|xaverage|xaverageorig|zprob))\\b'
+    'name': 'storage.type.builtin.functions.easylanguage'
+  }
+  {
+    'match': '\\b(?i:(black,blue,cyan,green,magenta,red,yellow,white,dark,light))\\b'
+    'name': 'storage.type.color.easylanguage'
+  }
+  {
+    'captures':
+      '1':
+        'name': 'storage.type.function.easylanguage'
+      '2':
+        'name': 'storage.type.return.easylanguage'
+      '3':
+        'name': 'entity.name.function.easylanguage'
+    'match': '\\b(?i:(method))\\s+([a-zA-Z_.-]+)\\s+(\\w+(\\.\\w+)?)'
+    'name': 'meta.function.easylanguage'
+  }
+  {
+    'match': '\\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)(L|l|UL|ul|u|U|F|f|ll|LL|ull|ULL)?\\b'
+    'name': 'constant.numeric.easylanguage'
+  }
+  {
+    'begin': '(^[ \\t]+)?(?=//)'
+    'beginCaptures':
+      '1':
+        'name': 'punctuation.whitespace.comment.leading.easylanguage'
+    'end': '(?!\\G)'
+    'patterns': [
+      {
+        'begin': '//'
+        'beginCaptures':
+          '0':
+            'name': 'punctuation.definition.comment.easylanguage'
+        'end': '\\n'
+        'name': 'comment.line.double-slash.easylanguage.two'
+      }
+    ]
+  }
+  {
+    'begin': '\\(\\*'
+    'captures':
+      '0':
+        'name': 'punctuation.definition.comment.easylanguage'
+    'end': '\\*\\)'
+    'name': 'comment.block.easylanguage.one'
+  }
+  {
+    'begin': '\\{'
+    'captures':
+      '0':
+        'name': 'punctuation.definition.comment.easylanguage'
+    'end': '\\}'
+    'name': 'comment.block.easylanguage.two'
+  }
+  {
+    'begin': '"'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.easylanguage'
+    'comment': 'Double quoted strings are an extension and (generally) support C-style escape sequences.'
+    'end': '("|\\n)'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.easylanguage'
+    'name': 'string.quoted.double.easylanguage'
+    'patterns': [
+      {
+        'match': '\\\\.'
+        'name': 'constant.character.escape.easylanguage'
+      }
+    ]
+  }
+  {
+    'applyEndPatternLast': 1
+    'begin': '\''
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.easylanguage'
+    'end': '(\'|\\n)'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.easylanguage'
+    'name': 'string.quoted.single.easylanguage'
+    'patterns': [
+      {
+        'match': '\'\''
+        'name': 'constant.character.escape.apostrophe.easylanguage'
+      }
+    ]
+  }
+]
+'scopeName': 'source.easylanguage'
